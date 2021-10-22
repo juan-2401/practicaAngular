@@ -30,7 +30,7 @@ public equipo: any[] = [];
   }
 
   private cargarEquipo(){
-    this.http.get('https://practicaangular-7cab9-default-rtdb.firebaseio.com/equipo.json')
+    this.http.get('https://angular-exercise-1c92c-default-rtdb.firebaseio.com/equipo.json')
     .subscribe((resp: any) => {
       console.log(resp);
       this.equipo = resp;
